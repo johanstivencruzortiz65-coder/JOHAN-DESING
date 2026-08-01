@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTAFOLIO // Johan Cruz - SYSTEM V.1</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Fondo Canvas Cybernetic -->
+  <canvas id="cyber-grid"></canvas>
+
+  <!-- Overlay UI Top Bar -->
+  <header class="hud-header">
+    <div class="hud-logo">
+      <span class="status-dot"></span> JOHAN DESING V.1
+    </div>
+    <nav class="hud-nav">
+      <a href="#terminal_sec">Inicio</a>
+      <a href="#grid_sec">Portafolio</a>
+      <a href="#skills_sec">Conocimientos</a>
+    </nav>
+    <a href="https://wa.me/573003671804?text=Hola%20Johan%C3%A1n,%20quiero%20iniciar%20un%20proyecto%20contigo." target="_blank" class="hud-btn">
+      INICIAR CHAT
+    </a>
+  </header>
+
+  <main class="main-container">
+
+    <!-- HERO / TERMINAL INTERACTIVA -->
+    <section id="terminal_sec" class="hero-section">
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <span class="btn-red"></span>
+          <span class="btn-yellow"></span>
+          <span class="btn-green"></span>
+          <span class="terminal-title">bash --Johan-Desing.sh</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <p class="system-msg">> SISTEMA INICIALIZADO...</p>
+          <p class="system-msg">> HOLA, SOY Johan Cruz [CREADOR MULTIMEDIA & DEVELOPER].</p>
+          <p class="system-msg">> Escribe <span class="highlight">'help'</span> para ver la lista de comandos disponibles.</p>
+        </div>
+        <div class="terminal-input-line">
+          <span class="prompt">Holaa...</span>
+          <input type="text" id="terminal-input" placeholder="Escribe un comando aquí..." autofocus autocomplete="off">
+        </div>
+      </div>
+    </section>
+
+  <!-- MATRIX DE SERVICIOS (GRID UNIFORME) -->
+    <section id="grid_sec" class="bento-section">
+      <h2 class="glitch-title" data-text="// MATRIX DE SERVICIOS">// MATRIX DE SERVICIOS</h2>
+      <p class="section-desc">Selecciona cualquier módulo para desplegar la especificación técnica y cotizar.</p>
+
+      <div class="bento-grid">
+        
+        <!-- [01] LOGOS & BRANDING -->
+        <div class="bento-item" onclick="openHudModal('Identidad Visual & Logos', 'Construcción de marca desde cero: diseño de logos vectoriales, manuales de marca, paletas cromáticas y tipografías corporativas.', 'https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1000&auto=format&fit=crop', '01 // DISEÑO Y MARCA')">
+          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1000&auto=format&fit=crop');"></div>
+          <div class="item-content-wrapper">
+            <div class="item-tag">// DISEÑO Y MARCA</div>
+            <div class="item-content">
+              <h3>Creación de Logos</h3>
+              <p>Diseño el corazón visual de tu marca.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- [02] FLYERS PUBLICITARIOS -->
+        <div class="bento-item" onclick="openHudModal('Publicidad Digital & Flyers', 'Creación de flyers de alto impacto para eventos, banners para pauta digital (Meta/Google Ads) y piezas para redes sociales.', 'https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1000&auto=format&fit=crop', '02 // DISEÑO Y MARCA')">
+          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1000&auto=format&fit=crop');"></div>
+          <div class="item-content-wrapper">
+            <div class="item-tag">// DISEÑO Y MARCA</div>
+            <div class="item-content">
+              <h3>Diseño de Flyers Publicitarios</h3>
+              <p>Piezas visuales e impactantes creadas para difundir un mensaje claro y efectivo.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- [03] BRANDING INTEGRAL -->
+        <div class="bento-item" onclick="openHudModal('Identidad Visual & Branding', 'Construimos todo el ecosistema gráfico y conceptual de tu negocio para destacar en el mercado.', 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=1000&auto=format&fit=crop', '03 // DISEÑO Y MARCA')">
+          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=1000&auto=format&fit=crop');"></div>
+          <div class="item-content-wrapper">
+            <div class="item-tag">// DISEÑO Y MARCA</div>
+            <div class="item-content">
+              <h3>Identidad de Marca Integral</h3>
+              <p>Construimos todo el ecosistema gráfico y conceptual de tu negocio.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- [04] AUDIOVISUAL -->
+        <div class="bento-item" onclick="openHudModal('Edición de Video & Motion Graphics', 'Montaje dinámico, edición rítmica de alta retención, reels/TikToks y efectos visuales.', 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=1000&auto=format&fit=crop', '04 // AUDIOVISUAL')">
+          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=1000&auto=format&fit=crop');"></div>
+          <div class="item-content-wrapper">
+            <div class="item-tag">// AUDIOVISUAL</div>
+            <div class="item-content">
+              <h3>Contenido Audiovisual para Redes</h3>
+              <p>Montaje dinámico, edición y creación de formatos cortos de alta retención.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- [05] FOTOGRAFÍA -->
+        <div class="bento-item" onclick="openHudModal('Fotografía de Producto & Corp', 'Capturas profesionales con iluminación y dirección artística adaptada a tu sector.', 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000&auto=format&fit=crop', '05 // FOTOGRAFÍA')">
+          <div class="bento-bg" style="background-image: url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000&auto=format&fit=crop');"></div>
+          <div class="item-content-wrapper">
+            <div class="item-tag">// FOTOGRAFÍA</div>
+            <div class="item-content">
+              <h3>Fotografía de Producto y Corporativa</h3>
+              <p>Capturas profesionales con iluminación y dirección artística adaptada a tu sector.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CORE SKILLS (RADIAL / HUD STYLE) -->
+    <section id="skills_sec" class="skills-section">
+      <h2 class="glitch-title">// HARDWARE & SOFTWARE SPECS</h2>
+      <div class="skills-hud-container">
+        
+        <div class="skill-hud-box">
+          <div class="hud-circle" data-percent="95">
+            <span class="circle-val">95%</span>
+          </div>
+          <h4>Premiere & Editing</h4>
+        </div>
+
+        <div class="skill-hud-box">
+          <div class="hud-circle" data-percent="88">
+            <span class="circle-val">88%</span>
+          </div>
+          <h4>After Effects</h4>
+        </div>
+
+        <div class="skill-hud-box">
+          <div class="hud-circle" data-percent="92">
+            <span class="circle-val">92%</span>
+          </div>
+          <h4>Photoshop / Illustrator</h4>
+        </div>
+
+        <div class="skill-hud-box">
+          <div class="hud-circle" data-percent="82">
+            <span class="circle-val">82%</span>
+          </div>
+          <h4>Frontend Web Dev</h4>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL HUD INTERACTIVO -->
+  <div id="hud-modal" class="hud-modal">
+    <div class="hud-modal-wrapper">
+      <div class="hud-modal-header">
+        <span id="modal-category">// CATEGORÍA</span>
+        <span class="hud-close" onclick="closeHudModal()">X CERRAR</span>
+      </div>
+      <div class="hud-modal-body">
+        <h2 id="modal-title">Título del Proyecto</h2>
+        <div class="modal-img-box">
+          <img id="modal-img" src="" alt="Project Preview">
+        </div>
+        <p id="modal-desc">Descripción del proyecto aquí...</p>
+        <a id="modal-action" href="https://wa.me/573022891516" target="_blank" class="hud-btn modal-btn">COTIZAR ESTE SERVICIO</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="hud-footer">
+    <p>© 2026 Johan Desing — PORTAFOLIO // ALL SYSTEMS OPERATIONAL</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
